@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2_JS</title>
+    <link type="text/css" rel="stylesheet" href="css/lab1_js.css">
+    <link type="text/css" rel="stylesheet" href="css/lab2_js.css">
+    
+</head>
+<body>
+    <main class="b_main">
+        <header class="b_header">
+            <h1>Лабораторна робота №2 JavaScript</h1>
+            <h2>Виконав студент групи КН-31 Ничипорук Віталій (варіант 9)</h2>
+        </header>
+        <ul class="main-menu">
+            <li><a href="lab1_js.html">Лабораторна робота №1</a></li>
+            <li><a href="lab2_js.html">Лабораторна робота №2</a></li>
+            <li><a href="lab3_js.html">Лабораторна робота №3</a></li>
+        </ul>
+        <h2>Завдання на лабораторну роботу</h2>
+        <div class="b-div-task">
+            1. (9) У формі є список фруктів та поле для введення їх вартості, після 
+            натискання Enter при введені вартості сформуйте список в якому зазначена
+            назва фрукту та його вартість..
+            <br>2. (6) Дана таблиця з числами. При натисканні на кнопку необхідно
+            виокремити кольорами всі додатні та від’ємні числа. Окремо позначити
+            максимальні та мінімальні значення серед додатних та від’ємних.
+        </div>
+        <div class="container">
+            <h2>Список фруктів та їх вартість</h2>
+            <form id="fruitForm">
+                <label>Оберіть фрукт:</label>
+                <select id="fruit">
+                    <option value="Яблуко">Яблуко</option>
+                    <option value="Банан">Банан</option>
+                    <option value="Апельсин">Апельсин</option>
+                    <option value="Ківі">Ківі</option>
+                </select>
+                <label for="priceInput">Введіть вартість:</label>
+                <input type="number" id="price" placeholder="Ціна" required>
+            </form>
+            <ul id="fruitList"></ul>
+
+            <h2>Таблиця з числами</h2>
+            <table id="numberTable">
+                <tr>
+                    <td>5</td>
+                    <td>-3</td>
+                    <td>12</td>
+                    <td>-7</td>
+                </tr>
+                <tr>
+                    <td>-15</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>-1</td>
+                    <td>3</td>
+                    <td>-4</td>
+                    <td>10</td>
+                </tr>
+            </table>            
+            <button class="b_click" onclick="table_process()">Виокремити</button>
+        </div>
+    </main>
+    <script src="script/lab2_js.js"></script>
+</body>
+</html>
